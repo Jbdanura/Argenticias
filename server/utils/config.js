@@ -1,6 +1,3 @@
-require("dotenv").config()
+const apiKey = "2ae6b18074fc45fc9bc556ff3365734e"
 
-const password = "tatuti90"
-const url = "mongodb+srv://jotabe:" + password + "@cluster0.wboco.mongodb.net/?retryWrites=true&w=majority"
-
-module.exports = url
+module.exports = apiKey

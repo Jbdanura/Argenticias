@@ -1,18 +1,17 @@
-const News = require("../models/news")
+const axios = require("axios")
 
+const apiKey = require("../utils/config")
 const newsRouter = require("express").Router()
 
-newsRouter.get("/",async(req,res)=>{
-    const news = await News.findOne()
-    res.json(news)
+newsRouter.get("/all",async(req,res)=>{
+    const result = await axios.get("https://newsapi.org/v2/top-headlines?country=ar&pageSize=50&apiKey=" + apiKey)
+    res.send(result.data.articles)
 })
 
-newsRouter.post("/", async(req,res)=>{
-    const news = new News({
-        name: "hola"
-    })
-    news.save().then(savedNews=>res.json(savedNews)).catch(error=> next(error))
-    
+newsRouter.get("/:category", async(req,res)=>{
+    const category = req.params.category
+    const result = await axios.get(`https://newsapi.org/v2/top-headlines?country=ar&category=${category}&pageSize=50&apiKey=${apiKey}`)
+    res.send(result.data.articles)
 })
 
 module.exports = newsRouter
