@@ -2,6 +2,7 @@ body{
     background-color: rgb(209, 209, 209);
     padding: 0;
     margin: 0;
+    word-break:keep-all;
 }
 
 .article img{
@@ -38,47 +39,44 @@ body{
     background-color: rgb(31, 126, 204);
     vertical-align: middle;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: auto;
+    white-space: nowrap;
 }
 .links{
     justify-content: space-around;
-    width: 100vw;
+    border-radius: 10px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.link-mobile{
-    display: block;
-    margin-top: 10px;
-}
 
 .logo{
-    margin-left: 20px;
     font-size:35px;
     font-weight:bolder;
-    margin-top:-7px;
+    margin-top:-14px;
 }
 .logo:hover{
     color: white;
 }
 a{
     text-decoration: none;
+    
 }
 .nav a{
     color: rgb(243, 243, 243);
-    padding: 12px;
-    border-radius: 10px;
+    padding: 10px 15px;
+    border-radius: 20px;
 }
 
 .links a:hover{
-    background-color: rgba(0, 0, 0, 0.144);
+    color: rgba(253, 241, 127, 0.836)
 }
-
-.link{
-    color: rgb(0, 0, 0);
-    font-size: 17px;
-    border-bottom: 2px solid green;
-    font-weight: 450;
+.links a{
+    background-color: rgba(14, 61, 99, 0.541);
+    padding: 9px;
+    border-radius: 14px;
+    margin-left: 2px;
+    font-size: 20px;
 }
-
 
 footer{
     background-color: black;
@@ -93,6 +91,7 @@ footer p{
 .menu{
     font-size: 30px;
     margin-top: -7px;
+    color: white;
 }
 .menu:hover{
     cursor:pointer;
@@ -108,6 +107,13 @@ footer p{
     }
     .nav{
         font-size: 18px;
+        display: block;
+    }
+    .links{
+        margin: 15px 0;
+    }
+    .links a{
+        font-size: 17px;
     }
 }
 
@@ -120,13 +126,14 @@ footer p{
         font-size: 16px;
     }
     .links{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
 @media screen and (max-width: 600px) {
+
     .article img{
-        max-width: 40vw;
+        max-width: 95vw;
     }
     .articles{
         width: 98vw;
@@ -135,8 +142,15 @@ footer p{
         font-size: 15px;
     }
     .article{
+        display: block;
         max-width: 95vw;
         margin: 5px;
     }
-
+    .article .info{
+        width: 90%;
+        margin-left: 5px;
+    }
+    .nav{
+        padding: 0 10px;
+    }
 }

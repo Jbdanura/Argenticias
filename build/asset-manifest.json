@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/argenticias/static/css/main.1bed0f08.css",
-    "main.js": "/argenticias/static/js/main.637c5786.js",
-    "static/js/787.998b4c01.chunk.js": "/argenticias/static/js/787.998b4c01.chunk.js",
-    "index.html": "/argenticias/index.html",
-    "main.1bed0f08.css.map": "/argenticias/static/css/main.1bed0f08.css.map",
-    "main.637c5786.js.map": "/argenticias/static/js/main.637c5786.js.map",
-    "787.998b4c01.chunk.js.map": "/argenticias/static/js/787.998b4c01.chunk.js.map"
+    "main.css": "./static/css/main.1f64ada1.css",
+    "main.js": "./static/js/main.d2453103.js",
+    "static/js/787.998b4c01.chunk.js": "./static/js/787.998b4c01.chunk.js",
+    "index.html": "./index.html",
+    "main.1f64ada1.css.map": "./static/css/main.1f64ada1.css.map",
+    "main.d2453103.js.map": "./static/js/main.d2453103.js.map",
+    "787.998b4c01.chunk.js.map": "./static/js/787.998b4c01.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bed0f08.css",
-    "static/js/main.637c5786.js"
+    "static/css/main.1f64ada1.css",
+    "static/js/main.d2453103.js"
   ]
 }
